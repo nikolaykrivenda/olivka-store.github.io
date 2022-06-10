@@ -1,0 +1,193 @@
+[v-cloak] {
+    display: none;
+}
+.img{
+    width: 100%;
+}
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(221, 166, 13);
+
+}
+
+.content {
+    display: flex;
+}
+
+@media screen and (max-width:768px) {
+    #container {
+        flex-direction: column;
+
+    }
+
+    .menu-list {
+        width: 100%;
+    }
+
+}
+
+.nav{
+    background-color: rgb(231, 221, 83);
+}
+
+.card-wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    max-width: 250px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    margin: 30px;
+    padding: 20px;
+    flex-grow: 1;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.hover-div {
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.568);
+    box-shadow: 0px 0px 5px gray inset;
+    z-index: 5;
+    padding: 20px;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.card-item {
+    padding: 10px;
+    margin: 5px;
+    /* background-color: ; */
+    /* background: linear-gradient(to right, rgb(238, 235, 235), rgb(103, 194, 255)); */
+    /* font-family: 'Consolas', monospace; */
+}
+
+.menu-list li {
+    cursor: pointer;
+    padding: 10px;
+    margin-left: 10px;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    text-align: center;
+    border-bottom: 1px solid grey;
+    /* background-color: rgb(228, 228, 227); */
+}
+
+.menu-list {
+    box-sizing: border-box;
+    height: 100%;
+    min-width: 200px;
+    list-style-type: none;
+    padding-left: 0;
+    padding: 20px;
+    background: rgb(231, 221, 83);
+    height: 335px;
+    border-radius: 5%;
+}
+
+.no-info {
+    padding: 20px;
+    font-size: 2rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: gray;
+}
+
+body {
+    margin: 0;
+    padding: 20px;
+    height: 100vh;
+    width: 100%;
+
+    background-image: linear-gradient(to right top, #b7d96c, #c7e389, #b7d96c, #c7e389, #b7d96c);
+}
+
+.search-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+#search-inp {
+    width: 40%;
+    padding: 10px;
+    margin: 10px;
+    background-color: rgba(255, 255, 255, 0.306);
+    font-size: 1.3rem;
+    border-color: rgb(103, 194, 255) !important;
+}
+
+#search-inp:focus {
+    /* border: none; */
+    outline: none;
+    box-shadow: 0px 0px 5px rgb(155, 46, 46);
+}
+
+.carousel-inner {
+    width: 100%;
+    height: 600px;
+    background-position: 100%;
+}
+
+.row-header {
+    text-decoration: none;
+    color: white;
+    display: block;
+    background-color: rgb(152, 214, 133);
+    margin-top: 0.5rem;
+    padding: 1rem;
+    font-size: 1.2rem;
+    font-weight: 900;
+    border-radius: 5px;
+}
+.text-logo{
+    margin-top: 20px;
+    text-align: center;
+    font-family: 'Viaoda Libre', cursive;
+
+}
+.top{
+    margin-bottom: 2rem;
+    background-color: #ffffff;
+    box-shadow: 0 0 20px green;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+}
+.btn-tel{
+    width: 100%;
+    background-color: rgb(152, 214, 133);
+    border-radius: 10px;
+    border: 1px solid white;
+}
+
+.logo{
+    width: 25%;
+}
+.text-logo{
+    margin-top: 20px;
+    text-align: center;
+    font-family: 'Viaoda Libre', cursive;
+}

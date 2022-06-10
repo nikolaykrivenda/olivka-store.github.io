@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ua">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Olivka_store.ua</title>
+
+  <script src="https://kit.fontawesome.com/2293037ed9.js" crossorigin="anonymous"></script>
+
+  <!-- CSS only -->
+  <link href="https://fonts.googleapis.com/css2? family = Play & display = swap" rel="таблиця стилів ">
+  <link href="https://fonts.googleapis.com/css2?family=Viaoda+Libre&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="shortcut icon" href="888.png" type="image/x-icon">
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style8801.css">
+</head>
+
+<body>
+
+  <div class=" justify-content-center top">
+    <div class="row">
+      <div class="col-md-4">
+        <img class="logo" src="777.png" alt="">
+      </div>
+      <div class="col-md-8 text-center justify-content-center align-items-center">
+        <div class="text-logo ">
+        <p class="logo-text"> <h3>Ділимось тим, що по-справжньому любимо!</h3></p>
+      </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <ul class="nav nav-tabs">
+    <li class="nav-item">
+      <a class="nav-link text-dark" aria-current="page" href="#">Меню</a>
+    </li>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle text-dark" data-bs-toggle="dropdown" href="#" role="button"
+        aria-expanded="false">Продукти</a>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Сухофрукти</a></li>
+        <li><a class="dropdown-item" href="#">Цукерки</a></li>
+        <li><a class="dropdown-item" href="#">Горіхи</a></li>
+        <li>
+          <hr class="dropdown-divider">
+        </li>
+        <li><a class="dropdown-item" href="#">11111</a></li>
+      </ul>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link text-dark" href="https://www.instagram.com/olivka_store.ua/">Instagram</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link disabled">Про нас</a>
+    </li>
+  </ul>
+  
+  <h4>На даний момент ми не працюємо(</h4>
+  <div id="container" v-cloak>
+    <div class="search-wrap">
+
+
+    </div>
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active ">
+          <img src="33211.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item ">
+          <img src="332245.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item ">
+          <img src="44276.jpg" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <label for="search-inp">Знайти продукт:</label>
+    <input type="text" v-model="search" v-on:keypress.enter="myFilter" id="search-inp">
+    <div class="content">
+      <div class="menu">
+        <ul class="menu-list">
+          <li v-for="(item, index) in nameArr" v-on:click="showNotebook(index)">
+            {{item}}
+          </li>
+        </ul>
+      </div>
+      <div class="card-wrap">
+        <div class="card" v-for="(item, index) in chooseNotebooks">
+
+          <div class="card-name card-item">
+            <b> {{item.name}}</b>
+          </div>
+          <div class="card-model card-item">
+            <img class="img" v-bind:src="item.image" alt="">
+          </div>
+          <div class="card-item procesor">
+            <b> </b> {{item.procesor}}
+          </div>
+          <div class="card-item country">
+            <b>Країна: </b> {{item.country}}
+          </div>
+          <div class="card-item price">
+            <b> </b> {{item.price}}
+          </div>
+          <a href="tel:+380500791162"> <button class="btn-tel"> <i class="fa-solid fa-phone"></i></button></a>
+
+        </div>
+
+
+      </div>
+      <div class="no-info" v-if="chooseNotebooks.length == 0">
+        <p>У нас зараз немає цього продукту</p>
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+
+  <script src="https://unpkg.com/vue@3"></script>
+  <script src="3011.js"></script>
+</body>
+
+</html>
